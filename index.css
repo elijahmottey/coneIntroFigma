@@ -1,0 +1,260 @@
+/* necessary */
+:root{
+   --header-background:rgb(23, 23, 53); 
+}
+*{
+    box-sizing: border-box;
+    margin:0 ;
+    
+}
+/* navigation and the header tag */
+header{
+    background: var(--header-background);
+    height: 70px !important;
+    position:relative;
+
+
+}.mobile{
+    display:none;
+}
+.h-list{
+    width:none;
+}
+
+ .menu{
+    height: 100vh;
+    width:70vw;
+    background: var(--header-background);
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top:0;
+    right:0;
+    opacity:0.95;
+ }
+nav{
+    padding:0px 5%;
+}
+header nav{
+    display: flex ;
+    justify-content: space-between;
+}
+nav a img {
+    margin-top: 15px;
+    width:20%px;
+    height: 40px;
+    margin-left:3%; 
+}
+nav ul {
+    display: flex !important;
+    justify-content: space-between; 
+    margin-top: 13px; 
+    
+    
+}
+.color{
+    color: white;
+    background: var(--header-background);
+}
+nav ul li {
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-right: 20%;   
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+nav ul li #color{
+    background: var(--header-background);
+    
+    border:2px solid white;
+
+}
+nav ul li #color-1{
+    background: yellow;
+    border:none;
+    color: black;
+
+}
+/* videos section */
+.video{
+    margin-top: 70px !important;
+    margin:0 5%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    
+}
+#video-1{
+    width: 100%;
+    height: auto;
+}
+div  p span a{
+    text-decoration: none;
+    
+}
+div h4{
+    font-weight: bolder;
+    font-size:1.4rem;
+    word-spacing: 10px;
+    padding: 10px 0;
+}
+div p span a{
+    padding:10px 0;
+}
+.demo{
+    border: 2px solid #67adcc;
+    width:20%;
+    height: 40px;
+    text-align: center; 
+ 
+}
+.demo:hover{
+    background:yellow;
+    border:none;
+    box-shadow: 5px 5px 5px 5px rgba(0, 5px, 0, 0.5);
+
+}
+.episode{
+ display: flex;  
+ justify-content: space-around;  
+}
+.episode div video{
+    width:90%
+}
+#related{
+    padding: 20px 0;
+}
+.links-1{
+    padding:30px 0;
+}
+.transcript{
+    padding:30px 0;
+}
+/* form css */
+form{
+    width:100%;
+    height:auto;
+    padding:40px;
+    background: var(--header-background);
+    color:white;
+    text-align: center;
+    
+}
+.f-header{
+    margin-bottom: 25px;
+    font-size:1.4rem;
+   
+}
+form p{
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+form label{
+    display: block;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+form input{
+    width: 100%;
+    padding:10px 0;
+    margin-bottom: 20px;
+}
+form button{
+    width:60%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 40px;
+    background: rgb(187, 67, 107);
+    border:2px solid rgb(187, 67, 107);
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+/* footer */
+footer{
+    margin:30px 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: var(--header-background);
+    padding: 30px;
+    align-items: center;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 0.8rem;
+}
+
+footer img{
+    width:50%;
+    height: auto;
+    border-radius: 80%;
+    border:6px groove #ccc ;
+    margin-bottom: 40px;
+
+}
+footer  p span a{
+    color:rgb(187, 67, 107);
+}
+/* tablet mode */
+@media(min-width:481px) and (max-width:767px){
+
+}
+/* desktop mode */
+@media screen and (min-width: 768px){
+  
+    .main-container{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom: 60px;
+    }
+    #video-1{
+    width: 50%;
+    padding-left:-10%
+
+}
+nav ul li {
+   
+
+    margin-right: 1%;   
+
+}
+.h-list{
+    width:55vw;
+}
+#color{
+    display: none;
+}
+.mobile{
+    display:flex;
+    color: white;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nota{
+    width:5%;
+    display:hidden;
+}
+    .intro{
+        width: 30%  !important;
+        
+    }
+    details p{
+        max-width:50%;
+    }
+     form{
+        width:400px;}
+    .links{
+        width:60vw;
+    }
+    
+   
+}

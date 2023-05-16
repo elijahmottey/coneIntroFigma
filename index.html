@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to figma</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/pics/p-logo.webp" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.learnwithjason.dev/" target="_blank">
+                <img src="/pics/p-logo.webp"  alt="image">
+            </a>
+            <ul  class="h-list">
+                <li class="mobile">episode</li>
+                <li class="mobile">schedule</li>
+                <li class="mobile">blog</li>
+                <li class="mobile">newsletter</li>
+                <li class="mobile">store</li>
+                <li ><a href="#" target="_blank"><button id="color-1" type="search"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>search </a></li>
+                <li><button id="color" class="color" >menu</button></li>
+            </ul>
+
+        </nav>
+     
+    </header>
+
+
+    <main>
+        <div class="video">
+            <div class="main-container">
+                <video src="./videos/15 Principles for an Excellent Work Ethic.mp4" 
+                controls="controls" id="video-1" autoplay>
+                    Introduction to Figma for developers
+                </video>
+                <div class="nota"></div>
+
+                <div .class="intro">
+                    <h4>Introduction to Figma for developers</h4>
+                    <p>Topic <span><a href="https://www.learnwithjason.dev/topic/design">Design</a>
+                    <span><a href="https://www.learnwithjason.dev/topic/figma">Figma</a></span>
+                </span></p>
+               <div><br>
+                <p>Figma is a powerful tool for creating designs and collaborating 
+                 with team members. In this episode, Ryan Warner gives a 
+                  feature tour and teaches us the fundamentals.</p>
+               </div><br><br><br>
+               <button class="demo">Demo</button>
+    
+                </div>
+            </div>
+          <br>
+           <div class="main-container">
+            <div class="links">
+                <h3 class="links-1">    
+                    Links & resources
+                </h3><br>
+                <ul>
+    
+                    <li><a href="https://figma.com">https://figma.com</a></li>
+                    <li><a href="https://help.figma.com/hc/en-us">https://help.figma.com/hc/en-us</a></li>
+                    <li><a href="https://help.figma.com/hc/en-us">https://help.figma.com/hc/en-us</a></li>
+                    <li><a href="https://www.figma.com/community/file/820337605519256142">https://www.figma.com/community/file/820337605519256142</a></li>
+                    <li><a href="https://ryan.warner.codes/">https://ryan.warner.codes/</a></li>
+    
+                </ul>
+    
+            </div><br>
+           <div>
+            <h2  id="related">Related episodes</h2>
+            <div class="episode">
+                
+                <div>
+                    <video src="https://www.learnwithjason.dev/diagnose-and-fix-ux-ui-problems"
+                 controls="controls"></video>
+                 <video src="https://www.learnwithjason.dev/generate-figma-ui-kits-from-code"  controls="controls"></video>
+                </div>
+               <div>
+                <video src="https://www.learnwithjason.dev/generative-data-visualization-design-and-planning-part-2"  controls="controls"></video>
+                <video src="https://www.learnwithjason.dev/let-s-learn-design-systems"  controls="controls"></video>
+   
+               </div>
+            </div>
+           </div>
+           </div>
+            
+        <div class="main-container">
+            <div>
+             <h3 class="transcript">Full Transcript</h3>
+             <details>
+                 <summary>
+                     Click to expand the full transcript
+                 </summary>
+                 <p>
+                     
+ Captions provided by White Coat Captioning (https://whitecoatcaptioning.com/). Communication Access Realtime Translation (CART) is provided in order to facilitate communication accessibility and may not be a totally verbatim record of the proceedings.
+  Hello, everyone. Welcome to another episode of Learn With Jason. Today, we have Ryan Warner Codes. How are you doing, Ryan?
+  Doing well, how are you doing, Jason?
+ 
+ >> Doing well. So you have been in the community for as long as I can remember. And you fill a multitude of roles. You worked on the website, you are in our Fortnite community as Ryan Warner Builds — haha. Yes, I love it. That is genius! You have a — I never not to use zoom backgrounds as a slide show before.
+ 
+ >> I wanted to know today, where are we dropping, Jason? Are we going to be —
+ 
+ >> Yes, go right into frenzy. We will end this game fast, haha. Excellent. So, for those of us who aren’t familiar with you and your work, do you want to give us a background?
+ 
+ >> Absolutely. Hi, all, I’m Ryan, designer, coder, hybrid. I am on a mission to bridge the gap between code, engineering, and design. I think more specifically, it is to help developers learn to design. But both ways for sure. I think design and having some design knowledge can help you be a better developer, you don’t need to be a master of design to be a better engineer and better empathize with our co-workers, users, etc.
+ 
+ >> Absolutely. That is what we are after today, how can we as developers take advantage of these tools to get better outcomes. We were going to look into Figma. So before we start, a quick shout out. We have live captions going at LWJ.dev/live if you want to — that’s weird. Who am I logged in as? It is not letting me post to my own chat. So if you want to go to the lwj.dev/live, we have captions by White Coat Captioning, thank you Lindsay for your help today. The captions are made possible Nullify and Fauna, we are looking for more sponsors, we want to make sure the show is accessible to everybody. Reach out if you would like to take part in making streaming more accessible to more people. With that being said, Ryan, we are going to work with Figma today. How do you want to do that? What do you want to actually do?
+ 
+ >> Yeah, good question. I would love to walk through some of the ways I use Figma and demonstrate the features I find powerful and draw metaphors or lines between Figma features and the way we code. And to do that, I was thinking we can use Learn With Jason, the website, which you designed mostly in code. There is no design file that exists for that.
+ 
+ >> Yeah, it is largely just me saying, that needs to be on the page and I do CSS until I don’t hate it anymore, ha.
+ 
+ >> Yes. And designing a code is awesome and it can definitely be a way to move really fast. But sometimes you want that, just that playground, or that play dough, where you can move things around and see how it looks before taking time to push it in code. So yeah, if we can go into Figma and bring up your website and start re-recrating it and looking at the Figma features as we go.
+ 
+ >> So let me pull up my website over here. All right. So this is Learn With Jason. So what we’ve done, we set it up with — there’s this gradient I learned how to do with Mandy Michael, the episode where we did that.
+ 
+ >> Yeah, that was really fun.
+ 
+ >> And the page is a list of things, you have the most recent episodes, which is — links to videos. So if you click into one of these,ing it shows us the YouTube video up top and details about it here. What the guest was, demo and repo are, links to resources, and these gnarly links here at some point I would love to fix. Always more things than time, right?
+ 
+ >> For sure.
+ 
+ >> We have the schedule, what is coming up, and that’s a list of upcoming things. So this is a placeholder image. And then the title, guest, description, and the link — this will take you to Google calendar so you can add it to your calendar if you go in. And this is the episode description, and that is basically it, right? The rest of the stuff on here, we’ve got a blog, the blog is pretty straightforward, there’s not a lot of magic here. My about page is just text, I have the newsletter opt in which you can, hint hint, nudge nudge, if you want a lot of great web design content, it is on my website. Ryan Warner Subscribes.
+ 
+ >> Yep, that’s right.
+ 
+ >> I have a workshop page that is plain text and — announcement! The stickers are shipping now. So if you want to get your hands on any of these fun stickers, they are mailing now. We figured out how to safely ship them so we are not putting anyone at risk to get them in the mail. You can grab them now. Grab that sticker pack. That is the whole website! It is what we’ve got. It is very straightforward, everything is in a utilitarian way. I needed this page, I put it together, it was not thought of as a system, but this is the problem that I have and the problem I am going to solve.
+ 
+ >> That worked well. I love your site, but you might want to clean things up and be more consistent and think about design in a wholistic way. This can be the first step towards that, to start. We can take some screenshots of the home page and some other page in dark and light mode and bring it into Figma and start re-creating it. If you want to take a full page screenshot, if that is what you are doing with the tool you have — if you bring up the Chrome inspector.
+ 
+ >> Oh, I was in the wrong window, ha. Oh, there we go.
+ 
+ >> Command shift P brings in a search menu, if you type screenshot, you will get a fullal sized screenshot that will take a picture of the whole thing.
+ 
+ >> This well go poorly, we have so many episodes on this page.
+ 
+ >> True, I didn’t think of it ahead of time. There’s a lot of episodes. I hope the file is not too big for it.
+ 
+ >> Oh, we needed to do it light mode. So let’s go — what was it?
+ 
+ >> Command shift P.
+ 
+ >> Screenshot.
+ 
+ >> I use this tool a lot on a new project, gathering inspiration.
+ 
+ >> This alone was worth the price of admission. So we will go to the store, do the same thing. Full size. Okay, I have that — haha. You’re right. It was. So here is what I’ve got now. I put together a Figma document, this is the Figma website, I am hiding the tool bar to give us more space. I have named it up here, I typed in, gave it a name, and that is all I’ve done. That is as far as I’ve gotten right now. So let me share this with you. Do you want me to — are you cool with me using your email, or should I pull it off screen?
+ 
+ >> You can use my email, Ryan@warner.codes.
+ 
+ >> Okay. So let’s do anyone with a link in view, and I will drop the chat. If you want to hop in with us and watch us code, you can do that right in Figma. So then, yeah, look at people hopping in. Awesome. It is Prince!
+ 
+ >> Haha. Hey, Prince. Anonymous, anonymous, I am in here too.
+ 
+ >> This is going to be full-blown chaos, I love it.
+ 
+ >> Yes, the first feature worth pointing out, it is realtime collaborative which is ground breaking from a design tool. I came from sketch and Photoshop and none of these support the way Figma does and that allows design to be a collaborative process — where we can both have the code checked out and are working on the at the same time.
+ 
+ >> Where do the screenshots go?
+ 
+ >> The downloads folder, probably.
+ 
+ >> Oh —
+ 
+ >> I will place an image, go to downloads, www and if I just select them all — look at all of these faces. I love it. I’m happy to see everybody in here. Let me take this out of full screen for a second. I think it is easier to drag them in.
+ 
+ >> Yes, you can drag and drop them in.
+ 
+ >> Let’s drag one. Drag two. Three, and four.
+ 
+ >> We can move these off to the side.
+ 
+ >> And now we’ve got the images here.
+ 
+ >> And just before we release the design in here, I want top point out that you can hide the cursor, the multi-player cursors, if you want to. In the top right, there’s a percentage button for Zoom. And that’s your whole view menu. And at the very bottom, there’s an option, multiplayer cursor that you can turn off if it becomes too distracting.
+ 
+ >> Do you see the people petting the corgi over here.
+ 
+ >> Maybe you want to keep them on for this, this is cool.
+ 
+ >> Haha, this is fun. We have everybody over here, petting corgis. Haha. Appreciate it. So we’ve pulled the site, as it is now. And from here, we have — do these blur? They are lazy loaded and Chrome captured. I think we are okay for that. So we have a few of the elements, the more designed elements, like the store is reasonably designed, like, it is an actual grid layer, or grid layout. The headers — the episode layouts are design. I will drop a link, to see what is going on. In the link, we have all of the guts, so once you have this, where would you start next? Or I guess once you have your resources —
+ 
+ >> So we will start by creating a frame, you can do it by hitting the F key, in the top left you can see what is selected there. We have presets on the right hand side there. We are going to work in desktop today. So we can expand the desktop and probably start with the biggest one, the 1440 top. So now we have a nice space to work. And you can get started working. We can make it taller if we’d like.
+ 
+ >> Okay.
+ 
+ >> So we can just drag that right on down.
+ 
+ >> Yeah. And then I would like us to start with the navigation, and just work top to bottom. The navigation is a pretty complex component.
+ 
+ >> Okay.
+ 
+ >> So it will expose us to a lot of the different features that Figma has to offer. So if we could bring this screenshot, maybe the dark mode, and just get the navigation close to our frame so we can kind of start copying it.
+ 
+ >> Yeah, okay. So what I am maybe going to do is bring it in.
+ 
+ >> Sure, that works.
+ 
+ >> And we will make it the width of our desktop here.
+ 
+ >> Try hitting K before you resize. That brings us into scale mode.
+ 
+ >> It is complicated — that is good enough. I wills work from there.
+ 
+ >> Yeah, that is fine.
+ 
+ >> So we have the navigation. Is that going to —
+ 
+ >> If that image is too big, you can take a screenshot, the top header.
+ 
+ >> I think I will use this one instead. This one is less intense. So let’s shrink this down, bring this up. Now we can see what’s going on. So let’s do it. We have a little bit — so I want to do a rectangle.
+ 
+ >> A rectangle, yep. So now we’re drawing, we’re designing — the hot key is R. So you can click and drag, a nice background to get us started. We can grab the color. Is it a slight gradient?
+ 
+ >> This one is a really complicated gradient that I don’t actually love. It was, like, a holdover from an older version of the site. I think what it is doing is, like e a dark gray but then it fades greens and pinks over the top with weird opacities and blend modes. It was cool for a minute.
+ 
+ >> We can scrap that 10. We will pick a color from it, go with the solid fill.
+ 
+ >> So this, I will click on the fill, and I will grab the eye dropper and then the color shifted.
+ 
+ >> So this — we will make it white so we can see it. I will make it subtle, off white. I can make this bigger, that is not the font that I chose. So I can moval this really fast. I can hold alt and drag.
+ 
+ >> Drag out a copy?
+ 
+ >> And then I can edit like that. And then if I hit — what is it? Return, collect, so I don’t have to click out, that’s a good one for me. So — whoops. Workshops, store —
+ 
+ >> We can pause right here and talk about what is going on. If we were coding this, we would have classes involved for consistency. We would have a color token for the white. Maybe a font size. The font family —
+ 
+ >> Right.
+ 
+ >> The line right. So in Figma, we can do the same thing, using linked styles. So to start, we will start with a color.
+ 
+ >> Okay.
+ 
+ >> So we have this fill here, the FFF, and you can see — yeah. You are in the right area. The fill pane. There’s an icon, four dots,ing on the top right. And this lets us create a color style.
+ 
+ >> Nice. So I will hit plus.
+ 
+ >> We could call this text, or white over something. Thinking ahead a little bit, I know you had a dark and light mode. I think the text color is the same, to show off a Figma feature, we can prefix this and a name space. So we can call this dark/text.
+ 
+ >> Like that?
+ 
+ >> Exactly. And then create style — the dark slash is magic on Figma land.
+ 
+ >> That’s cool. I’m on board. So I can make this —
+ 
+ >> Yeah.
+ 
+ >> If I do that, does it still work?
+ 
+ >> Yeah, it should still work.
+ 
+ >> Cool! I like that. You can give it meaningful labels, that is nice.
+ 
+ >> You can group your colors, you can imagine on a giant application, you might have many of those.
+ 
+ >> And so with these, I can select all of these.
+ 
+ >> Yes, the shift and click and the color styles and — and change that color and we can see if it — it updates all of them.
+ 
+ >> Oh, that’s nice. That is really handy. And one of the things I have noticed, I was a designer for a long time before I was a developer and one thing that consistently bit me was that I would make these complicated comps and then I would get feedback that was like, oh, we need to change the font. And it would throw off everything, like, my line heights would get weird, we would need to adjust weight and stuff like that. And suddenly, the whole design would just fall apart and would have to get reconstructed — not from scratch, but definitely had to get seriously reworked. And a lot of that came down to the fact that, like, you couldn’t just go in and universally change things. You had to manually select each layer, change it, it was a lot of pain to make that work. So this is — and I don’t think Figma is the first place to get this. But it feels like this is an app that’s gotten it right.
+ 
+ >> I agree, 100 percent. Design tools of the past were very fragile. Like you are saying, they are resistant to change. That is why I love coding so much. You can — the way you design the application can be the opposite of that and easy to change. And like you said, Figma is really nailing that in the design world. And we can take that a step further now. We have the color style, and we have weird padding going on. This padding is not consistent.
+ 
+ >> We have big gaps, it is all weird.
+ 
+ >> Right. That is totally fine just to get our ideas out. And now we want to tighten this up. We can do that using a feature called auto layout. And to enable auto layout, what we need to do is select all of the nav items. And then let’s group them, command G. Andal we can collapse and name this group.
+ 
+ >> That is how my brain works. I can’t not do it. Okay, we have a group. And on the right-hand side in the designp panel, there’s a button in the middle, vertically, in the middle, auto layout. So if we click this, we are going to see a couple things happen. So our spacing is tightened up. It is — it tidied itself automatically for us.
+ 
+ >> That is awesome!
+ 
+ >> We inferred that based on the width of all of our nav items. You are exploring some of the new options that we have that were previously not available.
+ 
+ >> Holy crap! Okay I have never used this feature before, my mind is thoroughly blown. That is amazing!
+ 
+ >> It is pretty cool. It feels a lot like how we code.
+ 
+ >> Wow! Oh, my god. Look at it go. Look at this! Holy crap.
+ 
+ >> You can adjust the padding in one place and it is consistent for all of our nav items.
+ 
+ >> Auto height, fixed height. So if I go to auto height, maybe I want to add some padding. What happens if I, like, what happens — can you make it go to multiple lines and stuff? Does that make it work, too.
+ 
+ >> I don’t think so. Not without some more complicated set up. I am not sure we will get into that today. But we can nest auto layout groups. But, yeah, we will get into that in another episode two.
+ 
+ >> Yeah, that is — that is very, very cool stuff. So now we’ve got this set up and — I am not happy with the size. So I need to change him down. Maybe what I want to do is go in here, and let’s figure out a better text size. 28 seems good, right? And then maybe I want to go — I don’t know. I can do a text size with this.
+ 
+ >> Just like we did the color style, we can link other styles together, the text properties, or if you wanted to add a shadow, or a stroke here. We can also create styles or how I like to think of it, classes.
+ 
+ >> Okay. I will choose the nav item. So that means if I go into my styles, and I say I want to make these smaller, they all — I only select one of them. Select all of them. And now if I go to — if I go to my nav item and adjust it, they will all — look at that. It is updating my padding, too. So the auto layout works with these styles.
+ 
+ >> Yes, we have the pixel paddle, we retain that as the font size grows.
+ 
+ >> All right. I am thoroughly impressed. So then — what do you want to do next?
+ 
+ >> We can flesh out the nav a little bit more and then talk about components. So we’re missing what three or four things here — we have the learn with Jason logo, the live now, the light mode toggle and the gradient at the top.
+ 
+ >> We have that in open screens, we will drag that in. So we are hitting K because we are using the stale, this is a complex shape that I don’t want to — so I am just going to scale it on down. We can drop that in here. And that — it is almost to the top. We will leave that there. There’s a question in the chat. Where is my chat? Does Figma let you know the complexity implications for developers from the design you create?
+ 
+ >> I think that is a tough question to answer. If I had to give a yes or no answer I would say no. It is up for the developer to interpret how complex this design is.
+ 
+ >> Uh-huh.
+ 
+ >> And auto layout could give you some queues, the same with the linked styles. That can give you some idea of what things should be consistent.
+ 
+ >> A code button — look! Look at it.
+ 
+ >> Yeah, just take a look at that. We have the auto layout comments, and it tells you how this would be in code. And sometimes you can copy and paste this straight out — some of the positioning stuff isn’t quite important.
+ 
+ >> Yeah.
+ 
+ >> The left and the top, not quite what we — we can probably clean that up a little bit with constraints, which maybe we will get to today.
+ 
+ >> Uh-huh.
+ 
+ >> But things like gradients, complex gradients, or box shadows, those are just a pain to, kind of, pull out from the design panel. So I often come to the code panel and just copy that. If I have three box shadows going on.
+ 
+ >> That is so nice. And thinking about — and this is all stuff that, once you know it, you know it. It is relatively straightforward to go in and write a display of plex or whatever. If you don’t know this stuff, and you are like, okay, how do I get this to flow properly? Copying and pasting it out feels like a super power. It is nice to know, it looks like this, if I copy and paste this, it is going to be close. That is really, really nice. So then I guess the next thing would be, we need a gradient. So I will press R for another rectangle. That looks like it is about, we will call that 10 pixels. We will go here, I am going to create one. Oh, what did I just do. Hello? Never mind. Hahaha —
+ 
+ >> That was funny. I don’t know what I did. I hit one of my short cuts. So I drew a rectangle, I don’t want to do this by, like, eye ball. So I will do with this thing over here. So it was 1280?
+ 
+ >> 1440.
+ 
+ >> And then we will make it — that seems right. Close enough for horseshoes and hand grenades. So let’s find — you wanted the gradient next?
+ 
+ >> Yes, let’s get it on there.
+ 
+ >> Okay.
+ 
+ >> So I will do this by — let’s make — rectangle. I will make it three little boxes because I have three colors. So I will grab the colors and build a gradient. Here is the pink, here is the yellow, and we’ve got light blue color. Okay. So those are the three colors of the Learn With Jason gradient. So if I go in here, I am not sure how to do, like, what do I do to make this gradient?
+ 
+ >> Sure. So click the little square of the color swatch, and then in the top left, you can see it says solid, there’s a dropdown there. So click that, we have options, different types of gradients, we can use image as a fill. And in our case, we will go with the linear gradient. We will go top to bottom by default, and then we will switch the orientation.
+ 
+ >> Okay.
+ 
+ >> And then to add a third color, just click on the top gradient area, exactly. Okay, we are getting there. So I can move these?
+ 
+ >> We can change the handles, we will drag the left to the left and the right to the right. It would be nice if there was a way to type this stuff in. I am not sure if that exists.
+ 
+ >> Now we have the gradient. It looks almost the same. It looks like there is positioning is a little different on the one, it is all right. It is all good. So this is, like, it is coming together.
+ 
+ >> Yeah, we are getting there. We need to tighten it, but it is okay. We will do the live now button and show a different side of it.
+ 
+ >> So I hate this button. If you want to help me make it look less terrible, I am all about it.
+ 
+ >> Now we will re-create as is.
+ 
+ >> Okay, fine, haha. I thought this was going to trick you into doing redesign work.
+ 
+ >> That would be the next one. It.
+ 
+ >> So I have a couple things going on here. So we have rounding corners, and we have this circle thing, and some text. And I guess I can do the icon thing first, we will do a little circle. And the chain is clicked, to keep the aspect ratio, which I love. And we can make some colors.
+ 
+ >> Beautiful.
+ 
+ >> And we will say — how would you group these, if you are going to make these into a thing?
+ 
+ >> I think how you started would work fine, like LWJ/ — yeah. These are not going to change based on light/dark mode. They might. As far as I know, they don’t.
+ 
+ >> I don’t think I did that.
+ 
+ >> Let me check. The gradients stay the same between the two modes.
+ 
+ >> That is how it looks in my head.
+ 
+ >> Works for me.
+ 
+ >> So this is the pink color, okay. And do you see how, like, when I drag this around it shows me these lines? So it shows me when it is centered. I can see — it is hard to see on the stream. If you look at the edge of the white box, there’s a little X that shows we are looking at the center of the box as opposed to when it extends beyond something else, so you can see I am aligned with the box itself.
+ 
+ >> That’s a great call-out.
+ 
+ >> The other thing I love about Figma I learned recently, if you hold alt, it will show you how far away it is from stuff. So I am 8.9 pixels away from the left side of the box. Isn’t that magical? It is helpful to see where you are supposed to be. So I can — I don’t know.
+ 
+ >> I use that feature all the time, taking a design handed to me, turning it into a React application, I need the margin value and holding the alt there is so handy.
+ 
+ >> Uh-huh. Thanks for stopping by. Good to see you. We will do 45 is what I meant to do. And then — so I just broke my vertical center. So what can consider do to vertically center — if I wanted to ensure that dot is in the middle of the thing.
+ 
+ >> So if you want to do it without clicking, dragging, and praying, you can select both and the rectangle, we have an alignment panel. And the vertical align —
+ 
+ >> Yes.
+ 
+ >> That is option B.
+ 
+ >> There we go. And now we are still — we have 10 pixels away, we have even — we are trying to see the even spacing on the bottom, 16.5, and the width on this thing is a little bit weird. So maybe we make it 140 so it is an easy number. That works. Okay! So then I need my live text. So it is bold. If we had 10 things that were all not quite aligned and vertically center, we selected them all and did the alignment, they would all move. And I don’t think we can choose which one moves when we do that.
+ 
+ >> I have noticed, like, it tends to attempt to be smart. So if you have, like, four things that are aligned and one thing that is not, it usually won’t move the four things that are aligned.
+ 
+ >> Yes.
+ 
+ >> What I noticed, I tend to do something where, once I get all of the vertically aligned needs, they end up vertically aligned. We’re not done here yet, I would show what I would do. I would group this and call it the Live Now button. I can select my Live Now button and I can select this nav and then I can vertically align those. And then I can do something, like, if I really needed to, I can group this and call it nav items. Or, like, nav content. And then I could select my whole thing and vertically align — oops. What it did I just — just looking here. This one. And then I can vertically align that. So there’s, like, ways that you can kind of use grouping to make things aligned without breaking your other alignments.
+ 
+ >> Yep. Well said.
+ 
+ >> Okay, so I need to make this better. Sop you can see how these are in groups, this is what really, really helped me, I want to select the text, so if I click, I am not in the group. If I hold command it will let me select the thing inside the group and jump down to the thing I click. That saves she a ton of time.
+ 
+ >> For sure, it is called clicking through the group by holding command and, yeah, I use that all the time, too.
+ 
+ >> So if you were going to do, I will use different-sized text, would you shrink the text to have a similar height, or would you use the same size and just use base lines?
+ 
+ >> I think it is totally fine to have a bit of a size increase here. I think this shouldp stand out a little bit. It is an important thing that happens not very often each day on your site. I would vertically align center rather than align base line.
+ 
+ >> Okay.
+ 
+ >> Which I think is what you had before.
+ 
+ >> I think that’s where it was.
+ 
+ >> That is good enough. So we missed the rounded edges. So if I want to do that, where do I go?
+ 
+ >> In the top right, in our positioning, there’s a rounded corner option. Yep, that’s the one. Yep, corner radius. And then you can type in the number we want.
+ 
+ >> Okay.
+ 
+ >> So this looks about right.
+ 
+ >> That is close enough.
+ 
+ >> So let’s enable auto layout on this, too, for the navigational items.
+ 
+ >> So I made a couple messes here. I did some grouping. We have a few things going on. We have the top gradient. We have our — that must be the one I was trying to draw when I broke everything. And then we have our nav background. And then — so I have already grouped this. Should I turn — should I get rid of this group if we’re going to do — where is my logo? Here it is.
+ 
+ >> We can keep it for now. I will enable auto layout on the live now button.
+ 
+ >> Interesting! So I will auto layout.
+ 
+ >> Yep. So now, let’s type something different in our button. Maybe we don’t need the now, we want live with three explanation points. And you might notice the background is adapting to the text.
+ 
+ >> Woah!
+ 
+ >> You are retaining our padding, consistent padding, as the text changes. And this is really useful for really common components, like a button. You might have a submit button that’s the same style —
+ 
+ >> So this is amazing.
+ 
+ >> Yes.
+ 
+ >> So what happens if I want two buttons?
+ 
+ >> If you want two buttons, with different text, yes.
+ 
+ >> Yes. It will still work. We can do it right now.
+ 
+ >> Let’s do it! Yes, show me how to do it.
+ 
+ >> We have the live now button, auto layout. And all we need to do is to turn it into a component. In the top center of Figma, we have some options here. And that’s the one right there, create a component or option, command K. You will notice it changes to purple, yeah.
+ 
+ >> Okay.
+ 
+ >> In our layers palate, with the icon. So from here, we can copy and paste it.
+ 
+ >> Okay, I will copy and paste. Now it is different.
+ 
+ >> We can get to what that means in a second. If you are familiar with React, this is just a component. So just like a component would change everywhere, that would happen here, too, in Figma. So if you change the color of —
+ 
+ >> Look at it go!
+ 
+ >> It is propagating to all of our instances.
+ 
+ >> That is awesome.
+ 
+ >> So it works a little bit different than it does in code in that there is a master component and then instances of that master. And we can see which one is the master by the little icon next to it in the layers palate.
+ 
+ >> Yes.
+ 
+ >> So we have those four diamonds and the copy is one big empty diamond.
+ 
+ >> Yeah.
+ 
+ >> So there is one master component. And you can change things like lay out what elements exist in the component, a positioning of things in the component, in the instances, you can still change things like props being passed down to a component in React.
+ 
+ >> You can?
+ 
+ >> But — yes. But you can’t change things like positioning or adding new layers.
+ 
+ >> Okay.
+ 
+ >> So back to what you’re saying before is having two buttons that have different text on them.
+ 
+ >> Uh-huh.
+ 
+ >> In our instance, we can create an override and that override is just going to be our text and there is no special thing we need to do, we can double chick on the text and type something else.
+ 
+ >> It looks like it was trying and then it —
+ 
+ >> It tried and didn’t quite — that is kind of weird.
+ 
+ >> That’s the curse of trying to do things live, right. So let’s see.
+ 
+ >> We will pull one out and see.
+ 
+ >> And there’s a question. So with the component, would you want to pull this out into, like, a named component library as opposed to having it in the spring. As this grows, we are going to use this across different pages, we have model pages and layouts like that. How do you organize the components?
+ 
+ >> Yes, I keep them in one page. You can see here, we are on page one. In the top left, yes, you can drop it down and see all of our pages.
+ 
+ >> Yes.
+ 
+ >> The default, that is collapsed.
+ 
+ >> Yes.
+ 
+ >> We can collapse this.
+ 
+ >> And bring the master there.
+ 
+ >> We can bring this one into here.
+ 
+ >> Yep.
+ 
+ >> I did it wrong — there. So now I’ve got my button here. And the other thing that is cool — it just fixed itself. What gives.
+ 
+ >> Yeah, I don’t know.
+ 
+ >> So when you do this, now you have — this is where the master components live, and then our design is out here. If you click assets, you can pull these in.
+ 
+ >> Good call.
+ 
+ >> So we have a little library. It is getting built up as we go and making new master components. You can click the assets tab, drag and drop. And maybe we are designing here and we realized that we want to change something about this component that is not just a color or a text value.
+ 
+ >> Uh-huh.
+ 
+ >> And something that requires master component. We can actually select our instance and right click it. I will have you do that. Right click, and then master component there. Go to master. And push overrides to master. So here, it is going to teleport us to the master component. We can make the changes we want. And then maybe we wanted to change some things that — we want, actually, this text to be read everywhere. We can push the overrides.
+ 
+ >> Oh! So if I —
+ 
+ >> Actually, let’s do that right now! We will figure out — because I know, well, actually, I don’t know. I think I am using a slightly less than black — so I have a different color for darker text. And that’s a tip that I picked up from another designer and, of course, I have now forgotten who it was. But your whites — you shouldn’t have both completely white and completely black because it can be a little much to look at. It is hard on the eyes. If you have a, like, pure white, then you can just turn your black down a little bit. And it makes it a little bit —
+ 
+ >> Easier.
+ 
+ >> Less visually stressful.
+ 
+ >> Yes.
+ 
+ >> So this one, we can say, like, button text, I guess. Because the button — oh, no, that is not what I want. So I will make this, like, dark mode button text. Does that work? That just works.
+ 
+ >> I think it does, if I remember.
+ 
+ >> Dark mode/button.
+ 
+ >> It might be one level deep there.
+ 
+ >> It will let me do the one level deep. That’s okay. But we can fix it like this.
+ 
+ >> There we go.
+ 
+ >> These will still be grouped, yeah. There we go. We have named things, you can see I have the text, the button text, and so I have now changed this. And we actually do want to push this through. So I would go to master and then push overrides.
+ 
+ >> Exactly.
+ 
+ >> And then if I go to the component, I will update it.
+ 
+ >> Beautiful.
+ 
+ >> That is so cool.
+ 
+ >> The actual thing, not just the name. That is because we are in the assets panel. It gives you a list of all of your components. So then we can come in here. So we are in pretty good shape. It looks like I have a tiny copy of the gradient in the bottom. I can copy this, drag it down. And then we will change this to the bottom gradient bar. These are two pixels, maybe.
+ 
+ >> One pixel.
+ 
+ >> A little baby.
+ 
+ >> And then we will make sure it matches up.
+ 
+ >> Cool. That doesn’t show up much on the light background. If I take a — a rectangle over here, and we will make it the dark background —
+ 
+ >> I believe that is the same color as your button text.
+ 
+ >> Oh, it is. Okay.
+ 
+ >> So we can just grab that from color style.
+ 
+ >> Now we can see, like, that is looking pretty similar. We’ve got some spacing differences and stuff like that. That is kind of an interesting thing to think about. Do we want — like, is it — are we over complicating things if we start auto layouting everything?
+ 
+ >> Not necessarily. We can roll it back if it doesn’t feel right. It depends on how we group the children here. So if we have a logo as a child element and all the nav items grouped together as a child element, and then maybe the switch, which just exists, but that can also be it’s own group. And then we get the auto layout, we can see what happens.
+ 
+ >> Yep with, that is looking pretty good. And then I can kind of shrink these down a little bit. If you want 40 pixels, that is good.
+ 
+ >> We will add another nav item and see what happens. We will make a bloop page.
+ 
+ >> I will go to the nav items, and copy paste.
+ 
+ >> Look at that.
+ 
+ >> Haha.
+ 
+ >> It just moves everything right over, including the nav now button, because of auto layout being on its parent.
+ 
+ >> That is incredible. I mean, that is — that is so useful. Unbelievably useful. And then we can move the whole thing around a little bit and try to get it lined up. We will visually align it. I don’t care if this is on the screen. So that — that is really cool. That is really, really powerful stuff. Okay. So, from here, what do you want to do next?
+ 
+ >> How much time do we have left?
+ 
+ >> 30-ish minutes. Let me double check.
+ 
+ >> Cool, I think we have time to double down on the component and the overrides to talk about light mode and dark mode and then maybe we can look at a brief overview of some other features, like plugins, as we wrap up.
+ 
+ >> Yeah! So pixel, yes, it does seem to work automatically. That is one of the things I like the most about it. I don’t know if you were here when I accidentally navigated away from the page. But I was trying to draw a rectangle and when I did that, I swiped to go back to the previous page and broke everything and that caused, I thought I lost my work but I found the rectangle later, it saved it before it navigated. And it looks like someone found the comment feature. Eh, okay, this is the risky click of the day.
+ 
+ >> It’s fine.
+ 
+ >> Oh, it is Nicky! Hey, hello. So this is also another really, really useful thing. Where is our desktop here? So if Ryan was doing — if Ryan was doing this design, and I was like, you know, I came in here and I was like — I love the idea here. But we can’t ship this. And then I can post this comment. He is now able to see my feedback in place. So you are able to, like, redline the document. And it is such a — hahaha. And yeah, it is all part of the realtime experience, right? And so we haven’t really talked about the realtime experience because I have not, like, we just haven’t been doing it. Another thing that is really cool here, Brian, if you want to maybe, like, remove that bloop. I am going to do a quick mock-up of this button. So what we’re able to do now, we are able to both work in the document at the same time. And we can see what each of us is doing, which is just incredibly powerful. That is something that is very worth, the collaborative benefits it gives us, I have noticed that I enjoyed designing a lot more now on a team that I have access to Figma, because I can go to a designer and say, hey, let’s do that.
+ 
+ >> Absolutely. Having a basic understanding of some of the things we are talking about here can apply not just to design, but we can come in here and brainstorm how we’re going to architect some web socket application or something, right? It can be a white board almost, especially in this remote world we are living in now. We can come in here and just mind meld and — we don’t have to be great designers, or artistic, in order to use Figma and gain a lot of value from it.
+ 
+ >> Absolutely. I don’t know where the purple came from. Is that even in my color pallet?
+ 
+ >> It is in the avatars, I think, on the thumbnails for each —
+ 
+ >> Oh! You know what I bet it is?
+ 
+ >> It is in the logo.
+ 
+ >> Yeah, that’s what it is. So I can — oh. Okay. So here is another thing that is worth looking at. I have selected a thing and then if I can’t change to a different color, there’s a button you can click. I have this little link and then you can come in here and, like —
+ 
+ >> It is unlinked from the style. You can pick whatever you want.
+ 
+ >> Yeah. So that’s — that is a nav bar. So you said the next thing you wanted to do was — was it component overrides?
+ 
+ >> Yeah. We can see what this looks like in light mode and how do we keep the component architecture going between light mode and the dark mode?
+ 
+ >> Yes.
+ 
+ >> We also have a question in the chat, can I import sketch files in Figma? Yes, you can. I have not done it personally, I don’t know exactly how well that works. But it is possible.
+ 
+ >> I have done it, it is pretty nice. It does a really nice job.
+ 
+ >> Cool.
+ 
+ >> Oh, what’s up. I didn’t even see in here. Thanks for hanging out. What a great way to spend a Thursday morning! It is Thursday, right? Haha. Time has lost all meaning for me.
+ 
+ >> It is today.
+ 
+ >> The sun is bright, it must be time for coffee, haha.
+ 
+ >> Same. I’m with you.
+ 
+ >> March 75th, that is how it feels, haha.
+ 
+ >> It is March 75th.
+ 
+ >> Haha. So I have created a duplicate here.
+ 
+ >> Okay.
+ 
+ >> If I am remembering correctly, I don’t think I changed the nav between the light and dark mode.
+ 
+ >> The background color does change. Everything is the same, but the background color changes. So before we duplicate —
+ 
+ >> There we go!
+ 
+ >> That is awesome. Yeah, so I think that any time that you are ready for a redesign, another episode I would definitely encourage you to check out is the Dan Mall episode. He has such amazing thoughts on how to think about working between design and, like, it is really good — thinking about design and development and how to frame it in thinking around design systems in general and the fact that whenever you start building anything, you are building a design, whether you meant to or not. The choices of how things look is a design system. There is some really interesting discussion on there in the difference between an emergent design system, one that evolves without a conscious effort and one that is intentional, what he and I did on the episode, on rethinking the cards for the site which I didn’t have a changes to implement yet. That’s a good piece of content, and super practical to see how all of these buttons work. What is cool about learning code and design, so much of it is I have a thing in my head and I want it on the screen, it is I don’t know what button to push or what the word means whether you say it. So the difficult part of coding and design is the vocabulary, the jargon, what does this symbol or word mean, and demystifying that goes such a long way, I think.
+ 
+ >> 100 percent. The demo episode was really good, I watched it live and I admire the way he thinks about design and development and moving the two —
+ 
+ >> He has a good brain, that Dan Mall.
+ 
+ >> Agreed.
+ 
+ >> We should all aspire to have a good brain like Dan. So let’s go back in here. We have done two things now that are potentially problematic. One is that we straight copy and pasted the whole it — so now if I go in here, and I make a change, I think — let’s find out. So if I decide that I am going to move this, now it looks different.
+ 
+ >> Before we copy and paste, we will make the live component. We will do the same thing for the entire nav.
+ 
+ >> We will call this nav bar. This was —
+ 
+ >> Switch, toggle. If we have an auto layout, we have more options on the child elements. Constraints are cool, I wish we had more time to talk about that. Let’s look in the alignment panel again in the top. With the switch, you can see it is align top in the very top — yeah. So we want to vertically align center.
+ 
+ >> Ohh! Oh, cool. Okay. That makes a lot of sense. That is super cool. All right! So I have done that. And now I have my nav content. And then I need to get my nav bar, that is all in there. And then if I take all of these, drop them in, move this above it.
+ 
+ >> Yes — I will turn this into a component. I will take this out, move it into our components page. And then I will be able to come in here and just drag it in, position it like so. I made one mistake I can see. Because the top of the flag of this clips out, it doesn’t want to align the way that I want it to. That is not something that we are going to worry about today. So now if we look in the assets panel, the logo, the button, the nav bar. If we need to use that anywhere, we can. What is exciting about that, I create the copy there. Then this nav bar is no longer — let’s just —
+ 
+ >> Because it is an instance of the component and not the master, we are not able to reorder hide and show.
+ 
+ >> That is what it looks like when it is not live. The auto layout stuff, that is incredible. That is something I never would have bothered to mock up in other design tools. It is going to be a lot of work, this is what the button looks like. I would just point it.
+ 
+ >> Exactly.
+ 
+ >> Okay. I am suitably impressed. This is awesome.
+ 
+ >> I want to show light mode here. It has a lighter background in the navigation. So we can use an over — yes. I believe so. I believe we have a screenshot. I would be — no. It is different. It is changing. And unless there’s opacity going on here something. But you can —
+ 
+ >> Like I said, I did silly things.
+ 
+ >> If we want it eventually, that is how I would go about doing light mode and dark mode and keeping things organized in components. Let’s override the background of the navigation, the background color, and we can make it a lighter blue or something. So this is still a component, still a part of our nav bar component. We have given an override to it, with the background fill. But we probably want to repeat this light mode version of your nav bar. We can nest components. So if we select this nav bar component instance in our layers, on the left, and then click create component again —
+ 
+ >> What?
+ 
+ >> We have a new master component and this is going to be the light mode and we can use the slash to group these, just like with did with the colors.
+ 
+ >> Ohh. So if I go to my assets — I need to move it. So let me move it into here. And then I can re-name this one dark mode. And then we will come out here, here is my light mode. So let’s go to assets. Look at that. That is so dope! So now I’ve got this. And I am going to pull this across. I will do this nudgy thing to make it line up the way I want. That is beautiful, so cool that it just worked.
+ 
+ >> Super cool. We have a nested component, we have the light one has a component instance inside of it with an override on the background color. If we want to change something, like adding a new element, layer, changing positioning, we have to go back to the original dark mode master that we made. And then it would update across the dark mode and the light mode.
+ 
+ >> So I will go to the asset and dark mode. And in the dark mode, we don’t actually want this switch. So I will pull that out entirely. It updated the light mode and that also means that it is updated both the dark and the light modem.
+ 
+ >> Exactly.
+ 
+ >> Very cool stuff. Where did my switch go?
+ 
+ >> Did you delete it or move it? You picked command Z.
+ 
+ >> I ran command Z. I probably just did something goofy. We are here, we have our nav bar, and I just remembered, I have a slightly different version of the learn with JSON logo for light mode. We can do the same thing here. So we will make this one logo, dark mode. And then I am going to — in this case, I would put the other one. And we can make sure that it is the same size. So this one is, 91.98, or 92. And we can make this 192. And we will call this logo light mode. And so then I think this is going to let me do something I really love. In here, can I’ve got the logo dark mode, right?
+ 
+ >> Uh-huh.
+ 
+ >> If I go over here, and I have logo dark mode, I can just flip it over to light mode.
+ 
+ >> Super cool. I am glad you brought this up.
+ 
+ >> So just, like, the background color, or the text characters themselves. They are overrides. We can override nested component instances with any other component we want. It is going to keep the same aspect ratio. So if we were doing some other, trying to nest some other random component in here, it can look pretty weird. Because you set them up to be the same aspect ratio there, they are the same logo, and I just put some different colors, it works perfectly.
+ 
+ >> So it is, like, it is incredible. Because if you notice, so I changed out the light mode and the dark mode. Let me double check I did that as well. I didn’t. What I want to do, then, is — let’s just push my overrides. You are learning so many things. So there it is, now we’ve got our light mode logo, or dark mode logo, and it just lets us do stuff, like, I want to show a new logo. I will go in here, pull in the dark mode logo. Okay, I am happy with that, let’s switch to light mode. That’s the mode we are in. So I can drag that around. And then it is, like, it is just incredible. Oh, now we are back into dark mode. So I will switch it over to dark mode. And it just — it is so powerful, what that enables us to do. Like —
+ 
+ >> Uh-huh.
+ 
+ >> This is not — this is so far from the Photoshop stuff I used to do back in the day.
+ 
+ >> Same. It was a struggle.
+ 
+ >> Yeah, and it is such a — Photoshop is an incredible tool. I am not knocking it at all. For the web, it doesn’t handle the, like, multivariant nature of the web. When you are doing multiple layouts, when you are doing multiple aspect ratios, you have modes and states that you are going to get into, it is hard to model that. I feel like it gives us a much better sense of control where we are only modeling the things that actually change instead of having to, like, copy and paste this nav over. If I want to make changes to the nav, I have to fix 40 instances. It helps to keep things simple.
+ 
+ >> Agreed, yeah. It is built for designing for the web. And the thought that has gone into all of the features and functionality is really bar none.
+ 
+ >> Yeah.
+ 
+ >> It is great stuff. Okay. So we have about 15 minutes left. I feel like there was something else that you wanted to show that we did not get to.
+ 
+ >> Yeah, so we can breeze through a couple things.
+ 
+ >> Yeah.
+ 
+ >> And we will not go as in-depth as we have here. How about we look at the prototype tab in the right?
+ 
+ >> Yes, let’s do that.
+ 
+ >> In here, we can create interactions, clickable prototypes, if you ever used Envision, this is Envision, but right in your design tool, you don’t need to export and create hotspots, it is ready to go with all sorts of features, like animation, sticky headers, sticky naves, so we could use — yeah. We will do an example and then we can wire it up to your actual design, too.
+ 
+ >> Do you see that button? I love this button. The tidy up.
+ 
+ >> So good.
+ 
+ >> So I will do, just so we can show how it works.
+ 
+ >> Yeah.
+ 
+ >> We will not use the nav item. We will make it the next line. Line middle. And then we will keep going. All right. So then if I take these, and we align them at the top — something like that.
+ 
+ >> Good enough.
+ 
+ >> Good enough.
+ 
+ >> Good enough indeed. I love how quick that makes it. You just drag it around. There you go, you are in the center.
+ 
+ >> Yep.
+ 
+ >> I go to the prototype mode. So what I want, here is what I want to happen. I want to make an endless loop. I want you to start here, click to here, and in the beginning.
+ 
+ >> And as we hover, we have some different things happening. So we hover over the bloop, there’s a circle over the right, hover over the boop text itself over the frame?
+ 
+ >> We will do this.
+ 
+ >> And this says click me, we can drag from here to the yo.
+ 
+ >> There we go.
+ 
+ >> This is to the frame.
+ 
+ >> Yep.
+ 
+ >> It looks like it wants to go to the frame.
+ 
+ >> Correct.
+ 
+ >> So now I will click here. Do the frame — all the way back.
+ 
+ >> We have interaction options on the top right, when one of these is clicked. On click, we will navigate to frame. It could be — this is set up to go. We don’t have an animation. We can add an animation.
+ 
+ >> I will smart animate this. I have no idea what it means.
+ 
+ >> I have never used this feature.
+ 
+ >> We will find out.
+ 
+ >> It is a surprise.
+ 
+ >> The play button?
+ 
+ >> Yes, the present button will take us into a new mode where we can interact.
+ 
+ >> Yeah!
+ 
+ >> And then I can, um, I can share the prototype. And we can copy the link. Now you can click this. Look at this, if I click somewhere that is not clickable, it shows me what on the prototype is clickable. That is helpful if you are doing a wire framing, you will show one — you don’t have to wire the whole thing. You will say, I want to go to this page, click the submit button. This helps you as a designer control what you are presenting.
+ 
+ >> Yes, exactly. It is useful for getting feedback from your teammates, communicating your ideas and, like, it brings up smart animate works really well for more complex things, like drop downs, etc. So we are scratching the surface here. There is a lot more you can do with it. We can show one more thing, on the navigation, if we want this to stay above everything else as we scroll down, we can click on the navigation component. There should be a fixed position among scrolling in the constraints menu.
+ 
+ >> Okay.
+ 
+ >> So now I will go to present mode again.
+ 
+ >> I have to set this to be — help.
+ 
+ >> Escape?
+ 
+ >> Top right, there is an option.
+ 
+ >> I am sure there’s a button that I am not pushing. I will go back out. This will be fine, ha. No, crap! What have I done? Okay, open —
+ 
+ >> Open in editor.
+ 
+ >> There we go, haha. Okay.
+ 
+ >> We will select the frame before we go into present mode.
+ 
+ >> Prototype.
+ 
+ >> We need vertical scrolling. And then —
+ 
+ >> I think we can go to present mode now.
+ 
+ >> It is because we put the interactions on the other thing. So let me bounce out real quick and let’s take these to another page. We will put these in here with their interactions and everything in place. And when we go to the design, that should take it out of there. And maybe just — we will then play. We will scroll to the top.
+ 
+ >> Right.
+ 
+ >> And then we can wire up the nav items if we wanted, as we are developing this and then if you want to share it with your colleague. And then it is just — it comes to life. It is much more communicative of the idea that you are going for, when you can actually click on the thing and interact with it.
+ 
+ >> Yeah. It is incredibly powerful how much we can do here. The amount of, like — it feels like it was built for the web. The things that we did feels like I want to show somebody about my website. So I want to build this interaction, the scroll to be fixed, and this kind of transition between things, like, if you were going to show, maybe, a page expansion or something. It is so interesting that that stuff is possible, that it works this way. It is really exciting and empowering. A lot of times I don’t want to build out the whole thing, sometimes I want to show the idea. On paper there’s a lot of gestures to get it across, coding takes hours, if I do it in Figma, I can get a lot of the benefit of having coded it in 45 minutes of drawing boxes.
+ 
+ >> 100 percent, well said. That is how I think about it, too. Sometimes Figma is the right way, when I want to do more exploratory and when I need sign off from my colleague in a quick way, Figma is the tool I reach for.
+ 
+ >> Yeah. It is really great. And Sam, think you are joking about how you can print to web. Check this out. I will go into the desktop, I will look at this nav bar, light mode, and let’s say we want to show the nav items, I can click on them, code, it wrote the CSS for me. It is set up with Flexbox, and with the padding and settings like that. Some of it is not useful, position stating, and this is incredible. And the facts that it is building, like, here is your alignment, here is the margins you set. Really, really cool. But, yeah. So this — this, I think, is a — this is a rabbit hole that goes all the way down. But I do think this is probably a good spot to stop for now. Ryan, thank you so much for giving us this tour. It has levelled me up in Figma, I hope it levelled you up. I am very, very pleased with how far we are able to get in so little time. So just to recap, what we were able to do, we took screenshots, and we were able to go in and reconstruct the nav and we set up the nav so it is a Figma component with auto layout. If I go in here, I turn one of these off, it relays the rest of the nav bar for us so we don’t have to go in and manually tweak things. We have it set up so we can select our light, or dark mode from a dropdown. And we can just say, we are going to do a dark mode page. We will put it in dark mode. All of that is managed in these components here so we can select them from the asset panel, we can get the logo, nav bar, etc. And so Ryan, where should people go if they want to learn more about Figma and false they want to learn more about you?
+ 
+ >> So about Figma, it has great tutorials on the website. To learn more about me, I will drop a link in the chat.
+ 
+ >> How do you find it when you are logged into Figma?
+ 
+ >> Help.Figma.com? Yes. So there’s tutorials here, it goes more in depth on some of the things we have talked about today. I’m on Twitter, twitch, it is Ryan.warner.codes. You can bring this up, I just released this, I have not told anyone about it. Here it is.
+ 
+ >> Haha.
+ 
+ >> That’s amazing. I love it. Well, this was — there are more Figma tutorials. I am training to be an instructor this month and the first collection is all about Figma. Look out for that. If you want to go to slash social on my website, I just have all the links.
+ 
+ >> There it is.
+ 
+ >> Twitter, twitch, I stream occasionally, the GitHub profile is worth clicking here. Figma is working on a community platform where people can publish their Figma files, like GitHub. So it is open source to designs, pretty revolutionary. We have things like Druple and Bhance, but those are closed source. You can see the file. If I scroll down, we can post what we made today if we wanted. You can click one of these and duplicate it. Now we have a copy of the source file. So I have have my website here and the social branding templates.
+ 
+ >> This is extremely cool. So this is, if you want to do your Twitter page. I want to see what it looks like. I can drag in, we can put these in. So if I put this in, you can see how it is updating over here at the same time. And this is using all the same concepts we did today.
+ 
+ >> Exactly.
+ 
+ >> Components, the instances are duplicated across and then we have the layering and this is really, really powerful stuff. It is extremely cool stuff. We have it set up —
+ 
+ >> I needs to change the font. It is supposed to be the default font. You can change it if you want.
+ 
+ >> We will do a corgi Twitter profile, there it is, it shows the Twitter set up in a couple seconds. So you can really test that out. And it plays across a bunch of these.
+ 
+ >> Yes.
+ 
+ >> That is fun.
+ 
+ >> Picking up a new brand. It is using the components we talked about on stream today, on the scale tool.
+ 
+ >> Check this out. I think that is a good stopping point. We’ve hit all we need to do. Ryan, thank you so much for coming and hanging out with us today. This was a blast.
+ 
+ >> This was awesome, glad to be here.
+                 </p>
+             </details>
+            </div>
+            <div><br>
+             <form action="">
+                 <h3 class="f-header">Never miss an episode!</h3>
+                 <p>
+                     New episodes of Learn With Jason drop every week,  <br>
+                      along with web dev tutorials, career growth insights, <br>
+                       and more. Subscribe to the newsletter to get the latest <br>
+                        delivered directly to your inbox.
+                    </p>
+                    <label for="name">First Name</label><input type="text" id="name"><br>
+                    <label for="email">Email</label><input type="email" id="email">
+                    <button type="submit">Subscribe</button>
+ 
+ 
+ 
+ 
+                 <p> I will never share or sell your info (because I’m not a dick). <br>
+                      Unsubscribe with one click at any time.</p>
+             </form>
+            </div>
+         </div>
+
+        </div>
+     
+      
+    <div   class="white">
+
+    </div>
+
+    </main>
+    
+    <div>
+        sponsorship
+    </div>
+    <footer>
+      <div>
+        <h2>About the Host</h2><br><br>
+        <img src="/pics/WIN_20230325_09_18_44_Pro.jpg" alt="">
+         <p>
+            Jason Lengstorf is a developer, teacher, lifelong learner, 
+            and a huge doofus. He helps companies build world-class
+             devrel teams and blogs at <span><a href="https://jason.af/" target="_blank">jason.af.</a></span>
+            </p>
+
+            <small>
+                
+                SOURCE CODE · CODE OF CONDUCT
+            </small>
+      </div>
+
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>
